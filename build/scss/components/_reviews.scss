@@ -1,0 +1,140 @@
+.reviews {
+  margin: 40px 0 0 0;
+  background-color: #f9f9f9;
+}
+
+.reviews__wrapper {
+  @extend .container;
+}
+
+.reviews__title {
+  @extend .band-red;
+  position: relative;
+  margin: 25px 0 0 0;
+}
+
+.reviews__box {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.reviews__slider {
+  width: 100%;
+}
+
+.reviews__slider-item {
+    position: relative;
+    margin: 10px 0 0 0;
+    &:before {
+      top: 90px;
+      left: 110px;
+      content: "\f10d";
+      font-family: 'FontAwesome';
+      position: absolute;
+      width: 160px;
+      border-top: 2px solid $f-color;
+      font-size: 80px;
+      text-align: right;
+      color: $f-color;
+    }
+    &:after {
+      top: 90px;
+      right: 110px;
+      content: "\f10e";
+      font-family: 'FontAwesome';
+      position: absolute;
+      width: 160px;
+      border-top: 2px solid $f-color;
+      font-size: 80px;
+      text-align: left;
+      color: $f-color;
+    }
+}
+.reviews__slider-img {
+  width: 215px;
+  height: 215px;
+  border-radius: 50%;
+  margin: 0 auto;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+  }
+}
+
+.reviews__slider-tetx {
+  max-width: 590px;
+  margin: 0 auto;
+}
+
+.reviews__slider-tetx-name {
+  text-align: center;
+  font-size: 2.4rem;
+  color: $f-color;
+}
+
+.reviews__slider-tetx-description {
+  font-family: 'Bad Script';
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.reviews__slider-tetx-agreement {
+  margin: 30px 0 0 0;
+  font-size: 1.4rem;
+  color: $m-color;
+  span {
+    display: block;
+    text-align: right;
+  }
+}
+
+.owl-carousel .owl-nav.disabled {
+   display: block;
+   .owl-prev {
+     position: absolute;
+      display: block;
+     color: #fff;
+     top: 24%;
+     left: 0;
+     transform: translateY(-50%);
+     font-size: 0;
+     &:after {
+        content: "\f104";
+        font-family: 'FontAwesome';
+        background-color: $ac-color;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+        line-height: 1.2;
+        border-radius: 50%;
+     }
+   }
+   .owl-next {
+     position: absolute;
+     color: #fff;
+     top: 24%;
+     right: 0;
+     transform: translateY(-50%);
+     font-size: 0;
+     &:after {
+       content: "\f105";
+       font-family: 'FontAwesome';
+       background-color: $ac-color;
+       display: inline-block;
+       vertical-align: top;
+       text-align: center;
+       width: 50px;
+       height: 50px;
+       font-size: 40px;
+       line-height: 1.2;
+       border-radius: 50%;
+     }
+   }
+ }

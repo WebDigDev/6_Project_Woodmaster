@@ -1,0 +1,146 @@
+.gallery {
+  margin: 10px 0 0 0;
+}
+
+.gallery__wapper {
+  @extend .container;
+}
+
+.gallery__title {
+  position: relative;
+  @extend .band-red;
+}
+
+.gallery__box {
+  margin: 40px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gallery__item {
+  margin: 0 0 20px 0;
+  position: relative;
+  &:nth-child(1) {
+    flex-basis: 38%;
+  }
+  &:nth-child(2) {
+    flex-basis: 38%;
+  }
+  &:nth-child(3) {
+    flex-basis: 18.1%;
+  }
+  &:nth-child(4) {
+    flex-basis: 38%;
+  }
+  &:nth-child(5) {
+    flex-basis: 18.1%;
+  }
+  &:nth-child(6) {
+    flex-basis: 38%;
+  }
+  &:nth-child(7) {
+    flex-basis: 18.1%;
+  }
+  &:nth-child(8) {
+    flex-basis: 38%;
+  }
+  &:nth-child(9) {
+    flex-basis: 38%;
+  }
+
+  &:hover .gallery__item_img-hover {
+    display: flex;
+  }
+  transition: all 2s ease-out;
+}
+
+.gallery__item_img {
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.gallery__item_img-hover {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparentize($m-color, .1);
+  animation: background 2s;
+}
+
+.gallery__item_img-eye {
+  a {
+    display:inline-block;
+    text-align: center;
+    background-color: $ac-color;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 3rem;
+    i {
+      line-height: 1.6;
+    }
+  }
+}
+
+.gallery__application {
+  margin-top: 25px;
+  display: flex;
+}
+
+.gallery__application-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__application-form-box {
+  padding: 25px 15px;
+  background-color: #f9f9f9;
+  width: 320px;
+}
+
+.gallery__application-form-title {
+  padding: 0;
+  margin: 0;
+  font-size: 2.4rem;
+  line-height: 1.2
+
+}
+
+.gallery__application-form-text {
+  @extend .band-blue;
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.gallery__application-form {
+  input {
+    width: 100%;
+    outline: none;
+    border: 1px solid $f-color;
+    border-radius: 50px;
+    padding-left: 15px;
+    font-weight: 300;
+  }
+}
+
+.gallery__application-form-btn {
+  @extend .btn;
+  display: inline-block;
+  text-decoration: none;
+}

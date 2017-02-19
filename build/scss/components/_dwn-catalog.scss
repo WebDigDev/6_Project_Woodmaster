@@ -1,0 +1,55 @@
+.dwn_catalog {
+  background-image: url('../img/catalog__bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 380px;
+  margin: 40px 0 0 0;
+}
+
+.dwn_catalog-wrapper {
+  @extend .container;
+  @extend .clear_fix;
+  max-width: 920px;
+
+}
+
+.dwn_catalog-item {
+  max-width: 500px;
+  padding: 20px 120px;
+  background-color: transparentize(#000, .5);
+  float: right;
+  margin: 15px 0 0 0;
+  transition: all 2s ease-out;
+  &:hover {
+    background-color :transparentize(#000, .2);
+  }
+}
+
+.dwn_catalog-item-title-box {
+  max-width: 260px;
+  position: relative;
+  padding: 10px 0 0 0;
+  @extend .band-red;
+}
+
+.dwn_catalog-item-title {
+  font-size: 3rem;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.dwn_catalog-item-btn-box {
+  // margin: 18px 0 0 0;
+}
+
+.dwn_catalog-item-btn {
+  @extend .btn;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 0;
+  text-decoration: none;
+  i {
+    transform: rotate(90deg);
+  }
+}

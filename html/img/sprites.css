@@ -1,0 +1,64 @@
+.quality__item-1, .quality__item-2, .quality__item-3, .quality__item-4, .quality__item-5, .path__item-1, .path__item-2, .path__item-3, .path__item-4, .path__item-5{
+	background: url(sprites.png) no-repeat;
+}
+
+.quality__item-1{
+	background-position: -4px -2px ;
+	width: 174px;
+	height: 177px;
+}
+
+.quality__item-2{
+	background-position: 0 -197px ;
+	width: 174px;
+	height: 177px;
+}
+
+.quality__item-3{
+	background-position: -203px 0;
+	width: 174px;
+	height: 177px;
+}
+
+.quality__item-4{
+	background-position: -201px -199px ;
+	width: 174px;
+	height: 177px;
+}
+
+.quality__item-5{
+	background-position: 0 -380px ;
+	width: 174px;
+	height: 177px;
+}
+
+.path__item-1{
+	background-position: -404px -1px ;
+	width: 80px;
+	height: 80px;
+}
+
+.path__item-2{
+	background-position: -403px -100px ;
+	width: 80px;
+	height: 80px;
+}
+
+.path__item-3{
+	background-position: -403px -199px ;
+	width: 80px;
+	height: 80px;
+}
+
+.path__item-4{
+	background-position: -402px -300px ;
+	width: 80px;
+	height: 80px;
+}
+
+.path__item-5{
+	background-position: -400px -398px ;
+	width: 80px;
+	height: 80px;
+}
+

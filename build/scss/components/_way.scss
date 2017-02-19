@@ -1,0 +1,72 @@
+.way {
+  margin: 40px 0 0 0;
+}
+
+.way__wpapper {
+  @extend .container;
+}
+
+.way__title {
+  @extend .band-red;
+  position: relative;
+}
+
+.way__box {
+  background: url('../img/path__bg.png') no-repeat;
+  background-position: 35px 0;
+  padding: 25px 0 0 0;
+  font-size: 0;
+}
+
+.way__item {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.6rem;
+  margin:  0 27px 20px 0;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.way__item-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px $ac-color;
+  background: url(../img/sprites.png) no-repeat;
+  width: 80px;
+  height: 80px;
+}
+
+.way__item-img_1 {
+  background-position: -404px -1px ;
+}
+
+.way__item-img_2 {
+  background-position: -403px -100px ;
+}
+
+.way__item-img_3 {
+  background-position: -403px -199px ;
+}
+
+.way__item-img_4 {
+  background-position: -402px -300px ;
+}
+
+.way__item-img_5 {
+  background-position: -400px -398px ;
+}
+
+.way__item-text {
+  width: 175px;
+  margin: 17px 0 0 0;
+  p {
+    @extend .band-blue;
+    position: relative;
+    margin: 0;
+    padding: 10px 0 0 0;
+    font-size: 1.6rem;
+    color: $f-color;
+    }
+}

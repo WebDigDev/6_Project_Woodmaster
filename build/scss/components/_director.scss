@@ -1,0 +1,113 @@
+.director {
+  margin: 20px 0 0 0;
+}
+
+.director__wrapper {
+  @extend .container;
+}
+
+.director__title {
+  @extend .band-red;
+  position: relative;
+}
+
+.director__box {
+  margin: 95px 0 0 0;
+  background-color: #f9f9f9;
+}
+
+.director__item {
+  font-size: 0;
+}
+
+.director__item-mail {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.8rem;
+  width: 40%;
+  padding: 0 30px;
+}
+
+.director__item-mail-img {
+  margin: -90px auto 0 auto;
+  width: 214px;
+  height: 214px;
+  border-radius: 50%;
+  img {
+      display: block;
+      width: 100%;
+      height: 100%;
+  }
+}
+
+.director__item-mail-text {
+  text-align: center;
+}
+
+.director__item-mail-position {
+  font-size: 1.6rem;
+  color: $m-color;
+}
+
+.director__item-mail-treatment {
+  font-family: 'Bad Script';
+  max-width: 330px;
+}
+
+.director__item-mail-signature {
+  text-align: right;
+}
+
+.director__item-video {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 60%;
+  &:hover .director__item-video-link {
+    display: flex;
+  }
+}
+
+.director__item-video-img {
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.director__item-video-link {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparentize($m-color, .1);
+  animation: background 2s;
+}
+
+.director__item_video-eye {
+  a {
+    display:inline-block;
+    text-align: center;
+    background-color: $ac-color;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 3rem;
+    i {
+      line-height: 1.6;
+    }
+  }
+}
+
+.director__place-map {
+  margin: 20px 0 0 0;
+  height: 520px;
+  filter: grayscale(1);
+}
